@@ -35,11 +35,10 @@ def ptext(text="is cool"):
     return 'Python ' + text.replace("_", " ")
 
 
-@app.route('/number/<n>', strict_slashes=False)
+@app.route('/number/<int:n>', strict_slashes=False)
 def isnumber(n):
     """returns n is a number if n is int """
-    if type(n) is int:
-        return "{} is a number".format(n)
+    return "{:d} is a number".format(n)
 
 
 if __name__ == '__main__':
