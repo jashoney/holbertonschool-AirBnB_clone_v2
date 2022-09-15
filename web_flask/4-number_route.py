@@ -37,9 +37,9 @@ def ptext(text="is cool"):
 
 @app.route('/number/<n>', strict_slashes=False)
 def isnumber(n):
-    """returns C followed by some text with spaces not _ """
+    """returns n is a number if n is int """
     if type(n) is int:
-        return n + "is a number"
+        return "{:d} + "is a number".format(n)
 
 
 if __name__ == '__main__':
