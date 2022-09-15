@@ -39,7 +39,7 @@ def ptext(text="is cool"):
 def isnumber(n):
     """returns n is a number if n is int """
     if type(n) is int:
-        return "{:d} + "is a number".format(n)
+        return "{} is a number".format(n)
 
 
 if __name__ == '__main__':
